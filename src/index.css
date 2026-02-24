@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Professional Color Palette */
+:root {
+  --school-red: #991b1b;
+  --school-saffron: #fff9db;
+  --school-orange: #fef3c7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--school-saffron);
+  font-family: 'Inter', sans-serif;
+  color: #1a365d;
+}
