@@ -27,7 +27,7 @@ const Infrastructure = () => {
         </h2>
         
         <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-          Saraswati Shishu Vidya Mandir operates across **two different locations** to provide specialized learning environments. The primary branch caters to **Aruna, Udaya, and Kiran** levels, while the main campus houses students from **Class 3 to 10**.
+          Saraswati Shishu Vidya Mandir operates across two different locations to provide specialized learning environments. The primary branch caters to Aruna, Udaya, and Kiran levels, while the main campus houses students from Class 3 to 10.
         </p>
 
         {/* Room/Campus Distribution */}

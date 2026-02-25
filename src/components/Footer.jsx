@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-[#991b1b] text-white pt-12 pb-6 mt-10">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-red-800 pb-10">
         <div>
-          <h3 className="text-xl font-bold uppercase tracking-widest border-l-4 border-yellow-400 pl-3 mb-4">SSVM Kiapada</h3>
+          <h3 className="text-xl font-bold uppercase tracking-widest border-l-4 border-yellow-400 pl-3 mb-4">SSM Kiapada</h3>
           <p className="text-sm text-red-100 italic">KIAPADA, JAJPUR, ODISHA-755019</p>
         </div>
         <div className="md:col-span-2 flex flex-col items-center md:items-end justify-center">
@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-center mt-8 text-[11px] text-red-300 uppercase tracking-widest font-bold">
-        © 2026 Saraswati Shishu Vidya Mandir | KIAPADA
+        © 2026 Saraswati Shishu  Mandir | KIAPADA
       </p>
     </footer>
   );
