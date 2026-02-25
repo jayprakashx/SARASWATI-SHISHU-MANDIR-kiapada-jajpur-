@@ -1,4 +1,4 @@
-import React from 'react'; // 👈 THIS LINE FIXES THE ERROR
+import React from 'react';
 
 const Family = () => {
   return (
@@ -8,13 +8,13 @@ const Family = () => {
           Our Family (Staff Members)
         </h2>
         
-        {/* Main Group Photo */}
         <div className="bg-white p-4 rounded-2xl shadow-2xl border-4 border-white transition-transform hover:scale-[1.01]">
           <img 
-            src="/src/assets/staff-group.jpg" 
+            /* ✅ CRITICAL: Ensure this matches 'staff-group.jpg' or 'staff_group.jpg' exactly in your folder */
+            src="/gallery/staff-group.jpg" 
             alt="School Staff Group" 
             className="w-full h-auto rounded-xl"
-            onError={(e) => { e.target.src = "https://via.placeholder.com/1200x600?text=Upload+staff-group.jpg+to+Assets"; }}
+            onError={(e) => { e.target.src = "https://via.placeholder.com/1200x600?text=Check+filename+in+public/gallery"; }}
           />
           <p className="mt-6 text-xl font-bold text-[#1a365d] italic">
             "Dedicated to shaping the future of our students with moral values and excellence."
@@ -25,4 +25,4 @@ const Family = () => {
   );
 };
 
-export default Family; // 👈 ENSURES App.jsx CAN LOAD THE PAGE
+export default Family;
