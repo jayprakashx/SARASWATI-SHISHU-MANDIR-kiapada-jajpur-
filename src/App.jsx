@@ -17,7 +17,7 @@ import Events from './pages/Events';
 import About from './pages/About';
 import Infrastructure from './pages/Infrastructure';
 import Contact from './pages/Contact';
-import Admission from './pages/Admissions'; // 👈 Matches your filename 'Admissions.jsx'
+import Admission from './pages/Admissions'; 
 
 function App() {
   return (
@@ -43,6 +43,8 @@ function App() {
             <Route path="/infrastructure" element={<Infrastructure />} />
             <Route path="/contact-us" element={<Contact />} />
             <Route path="/admission" element={<Admission />} />
+            
+            {/* Administration Route removed to fix 404/Pre-transform error */}
           </Routes>
         </main>
         <Footer />

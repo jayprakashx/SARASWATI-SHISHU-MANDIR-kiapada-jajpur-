@@ -14,5 +14,5 @@ const Batika = () => {
   );
 };
 
-// ⚠️ THIS IS THE LINE YOU ARE MISSING
+
 export default Batika;

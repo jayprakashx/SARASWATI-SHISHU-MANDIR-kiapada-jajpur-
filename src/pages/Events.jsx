@@ -1,4 +1,4 @@
-import React from 'react'; // 👈 MUST ADD THIS LINE
+import React from 'react'; 
 
 const Events = () => {
   return (
@@ -14,4 +14,4 @@ const Events = () => {
   );
 };
 
-export default Events; // 👈 ENSURE THIS IS AT THE VERY BOTTOM
+export default Events; 

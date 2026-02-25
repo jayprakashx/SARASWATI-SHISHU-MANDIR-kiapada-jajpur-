@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PhotoGallery = () => {
-  const totalPhotos = 6; 
+  const totalPhotos = 6; // This matches your 6 renamed photos
 
   return (
     <div className="bg-[#fff9db] min-h-screen p-8">
@@ -12,7 +12,8 @@ const PhotoGallery = () => {
         {Array.from({ length: totalPhotos }).map((_, i) => (
           <div key={i} className="rounded-xl overflow-hidden shadow-lg border-4 border-white">
             <img 
-              src={`/src/assets/gallery/pic-${i + 1}.jpg`} 
+              /* This path points directly to your public/gallery folder */
+              src={`/gallery/pic-${i + 1}.jpg`} 
               className="w-full h-48 object-cover" 
               alt={`Gallery ${i + 1}`}
               onError={(e) => { e.target.src = "https://via.placeholder.com/300?text=Check+Filename"; }}

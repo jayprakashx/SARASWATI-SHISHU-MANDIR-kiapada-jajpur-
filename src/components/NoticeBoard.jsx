@@ -1,4 +1,4 @@
-import React from 'react'; // Add this line
+import React from 'react'; 
 
 const notices = [
   { title: "Admissions Open for 2026", date: "15 Jan 2026" },
