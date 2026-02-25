@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Prayer = () => {
   const [selectedPrayer, setSelectedPrayer] = useState(null);
 
-  // Updated Prayer List
+  // Updated Prayer List - Content matches your public/gallery filenames
   const prayers = [
     { id: 1, name: "State Anthem (Vande Utkala Janani)", type: "text" },
     { id: 2, name: "National Anthem", type: "text" },
@@ -13,7 +13,7 @@ const Prayer = () => {
     { id: 6, name: "Guru Vandana", content: "guru_vandana.jpg", type: "image" }
   ];
 
-  // Full Lyrics provided by you
+  // Full Lyrics Restored
   const prayerLyrics = {
     1: `Bandē utkaḷa jananī
 Cāru hāsamayī cāru bhāṣamayī,
@@ -116,18 +116,17 @@ Jaẏa jaẏa jaẏa jaẏa hē.`
             
             <div className="p-8 overflow-y-auto bg-white">
               {selectedPrayer.type === "text" ? (
-                /* Displaying full anthem lyrics */
                 <pre className="whitespace-pre-wrap font-serif text-xl md:text-2xl leading-relaxed text-gray-900 text-center italic">
                   {prayerLyrics[selectedPrayer.id]}
                 </pre>
               ) : (
-                /* Image Section for other prayers */
                 <div className="space-y-4 text-center">
                   <img 
-                    src={`/src/assets/${selectedPrayer.content}`} 
+                    /* ✅ FIXED PATH: Pointing to public/gallery directly */
+                    src={`/gallery/${selectedPrayer.content}`} 
                     alt={selectedPrayer.name}
                     className="mx-auto rounded-lg shadow-lg max-w-full h-auto border-2 border-orange-100"
-                    onError={(e) => { e.target.src = "https://via.placeholder.com/500x700?text=Please+Upload+Photo+to+Assets"; }}
+                    onError={(e) => { e.target.src = "https://via.placeholder.com/500x700?text=Check+Filename+in+public/gallery"; }}
                   />
                   <p className="text-sm text-gray-500 italic mt-4">Official School Prayer Document</p>
                 </div>
