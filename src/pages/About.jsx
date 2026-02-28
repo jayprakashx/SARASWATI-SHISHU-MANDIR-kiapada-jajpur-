@@ -34,7 +34,7 @@ const About = () => {
                 Quality Education
               </h3>
               <p className="text-gray-700 mt-2 font-medium">
-                Strong academic foundation from Prambha to Class 8.
+                Strong academic foundation from Aruna  to Class 8.
               </p>
             </div>
 
